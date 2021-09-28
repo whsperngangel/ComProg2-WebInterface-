@@ -1,0 +1,68 @@
+$border: 1px solid grey;
+$padding: 10px;
+$margin: 10px;
+$opacity: 0.9;
+$text-align: center;
+$weight: bold;
+$decoration: none;
+$LongName: "Angel's Descendants IT Solutions";
+$ShortName: "AD IT Solutions";
+
+%message-same {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+@media (min-width: 650px) {
+    h1::before {
+        content: $LongName;
+    }
+}
+
+@media (max-width: 650px) {
+    h1::before {
+        content: $ShortName;
+    }
+}
+
+header {
+    text-align: $text-align;
+}
+
+nav {
+    text-align: $text-align;
+    opacity: $opacity;
+
+    ul {
+        text-decoration: $decoration;
+    }
+}
+
+table {
+    padding: $padding;
+}
+
+.type {
+    margin: $margin;
+}
+
+th {
+    @extend %message-same;
+}
+
+.header {
+    font-weight: $weight;
+}
+
+td {
+    @extend %message-same
+}
+
+.TutorialInfo {
+    @extend %message-same;
+}
+
+.session {
+    padding: $padding;
+}

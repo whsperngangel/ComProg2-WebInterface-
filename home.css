@@ -1,0 +1,45 @@
+body {
+    background-image: url(https://www.paymentsjournal.com/wp-content/uploads/2019/11/904-scaled.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    word-wrap: normal;
+}
+
+header {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+@media (min-width: 650px) {
+    h1::before {
+        content: "Angel's Descendants IT Solutions";
+    }
+}
+
+@media (max-width: 650px) {
+    h1::before {
+        content: "AD IT Solutions";
+    }
+}
+
+nav {
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    opacity: 0.9;
+    margin: 20px 50px;
+    padding: 5px;
+}
+
+#nav {
+    list-style-type: none;
+}
+
+section {
+    background-color: cadetblue;
+    opacity: 0.9;
+    margin: 10px 50px;
+}
